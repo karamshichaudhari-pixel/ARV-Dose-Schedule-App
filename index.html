@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Sheet App</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    body, iframe {
+      margin: 0;
+      width: 100%;
+      height: 100vh;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQPZVr6GrcM8gbGozXdmqPmS00-OyByFJpaz4AA_aoavQDP1-XbXN77__ovzZnss-A-29gM3bbZveqo/pubhtml"></iframe>
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+</script>
+
+</body>
+</html>
